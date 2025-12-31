@@ -159,7 +159,7 @@ function loadQuestion(index){
         opt.forEach((buttons)=>{
         buttons.addEventListener("click",()=>{
             ans=buttons.lastElementChild.innerHTML;
-        })
+        });
     })
 }
 
@@ -176,9 +176,27 @@ ch.addEventListener("click",()=>{
     if(ans==quizData[questionIndex].answer){
         score++;
         document.querySelector(".feedback").textContent+="✅ Correct";
+        let opt=document.querySelectorAll(".options>div");
+        opt.forEach((button)=>{
+            if(button.lastElementChild.innerHTML==ans){
+                button.style.backgroundColor="#5ced74a3";
+                button.style.borderRadius="20px";
+            }
+        });
     }
     else{
         document.querySelector(".feedback").textContent+="❌ Wrong";
+        let opt=document.querySelectorAll(".options>div");
+        opt.forEach((button)=>{
+            if(button.lastElementChild.innerHTML==quizData[questionIndex].answer){
+                button.style.backgroundColor="#5ced74a3";
+                button.style.borderRadius="20px";
+            }
+            if(button.lastElementChild.innerHTML==ans){
+                button.style.backgroundColor="#ed6f5ca3";
+                button.style.borderRadius="20px";
+            }
+        });
     }
     document.querySelector(".score").innerHTML = `${score} / ${quizData.length}`;
     setTimeout(() => {
