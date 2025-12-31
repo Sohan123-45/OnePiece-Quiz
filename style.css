@@ -29,8 +29,8 @@ body{
 .quiz .question-box{
     font-size: 25px;
     padding-bottom: 10px;
-    font-family: 'Pirata One', cursive;
-    color: #fff200;
+    font-family: 'Pirata One',Impact,sans-serif;
+    color: #ffee00;
 }
 .quiz .options div{
     padding: 5px;
@@ -46,7 +46,7 @@ body{
     padding-left: 23px;
     font-size: 20px;
     font-weight: bold;
-    color: #2c3e50;
+    color: #252b43;
     cursor: pointer;
 }
 .quiz>button{
