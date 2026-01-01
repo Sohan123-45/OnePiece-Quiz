@@ -29,7 +29,7 @@ body{
 .quiz .question-box{
     font-size: 25px;
     padding-bottom: 10px;
-    font-family: 'Pirata One',Impact,sans-serif;
+    font-family: 'Pirata One',sans-serif;
     color: #ffee00;
 }
 .quiz .options div{
@@ -96,5 +96,6 @@ button:active {
     font-size: 20px;
     padding-left: 15px;
 }
+
 
 
