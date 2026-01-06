@@ -53,7 +53,7 @@ OnePiece-Trivia/
 ├── index.html
 ├── style.css
 ├── script.js
-├── mp3 files
+├── assets
 └── README.md
 ```
 
