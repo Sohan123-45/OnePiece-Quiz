@@ -1,4 +1,4 @@
-let audio =new Audio("crocodile_laugh.mp3");
+let audio =new Audio("assets/crocodile_laugh.mp3");
 const audiobtn=document.createElement("button");
 audiobtn.innerHTML="<p>▶</p>";
 audiobtn.addEventListener("click",()=>{
@@ -30,10 +30,10 @@ function createAudioButton(audioFile) {
 }
 
 const hogbackButtons = [
-    createAudioButton("caesar_clown_laugh.mp3"),
-    createAudioButton("morias_laugh.mp3"),
-    createAudioButton("hogback_laugh.mp3"),
-    createAudioButton("brooks_laugh.mp3")
+    createAudioButton("assets/caesar_clown_laugh.mp3"),
+    createAudioButton("assets/morias_laugh.mp3"),
+    createAudioButton("assets/hogback_laugh.mp3"),
+    createAudioButton("assets/brooks_laugh.mp3")
 ];
 
 
@@ -204,3 +204,4 @@ ch.addEventListener("click",()=>{
         loadQuestion(questionIndex);
     }, 1500);
 });
+
